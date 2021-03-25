@@ -1,0 +1,164 @@
+/* general rules for generic elements */
+
+.container {
+    padding-top: 4rem;
+}
+
+.shadowed-card {
+    height: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 8px;
+}
+
+.cards-holder {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+a {
+    color: #6a72fb;
+}
+
+.small-headline {
+    font-size: 1rem;
+    color: #4847ec;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+
+article ul {
+    list-style: none;
+    list-style-position: outside;
+    padding-left: 0.8rem;
+    position: relative;
+}
+
+article ul li {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+article ul.bared-list::before {
+   content: "";
+   height: 100%;
+   width: 4px;
+   background-image: repeating-linear-gradient(to right, #33eedd , #6767e0);
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   border-radius: 8px;
+}
+
+article ul li span {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 2px;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.no-round {
+    border-radius: 0px;
+}
+
+
+/* first cards holder */
+
+.cards-holder:nth-of-type(1) {
+    height: 190px;
+}
+
+.cards-holder:nth-of-type(1) .col-sm:nth-of-type(1) {
+    width: 32%;
+    flex: none;
+}
+
+.cards-holder:nth-of-type(1) .col-sm:nth-of-type(1) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.cards-holder article {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    box-sizing: border-box;
+}
+
+.cards-holder:nth-of-type(1) .col-sm:nth-of-type(2) article h6 {
+    color: #0072df;
+}
+
+.cards-holder:nth-of-type(1) .col-sm:nth-of-type(2) article h2,
+.cards-holder:nth-of-type(1) .col-sm:nth-of-type(2) article h6
+ {
+    font-weight: bold;
+}
+
+.cards-holder:nth-of-type(1) .col-sm:nth-of-type(2) .card-content
+ {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
+
+
+
+/* second and third cards holder */
+
+.cards-holder:nth-of-type(2),
+.cards-holder:nth-of-type(3)
+ {
+    height: 272px;
+}
+
+.cards-holder:nth-of-type(2) .col-sm:nth-of-type(1),
+.cards-holder:nth-of-type(3) .col-sm:nth-of-type(1)
+ {
+    width: 60%;
+    flex: none;
+}
+
+.cards-holder:nth-of-type(3) .col-sm:nth-of-type(2) .shadowed-card .shadowed-card
+ {
+    height: 64px;
+    width: 64px;
+}
+
+.cards-holder:nth-of-type(3) .col-sm:nth-of-type(2) .shadowed-card article .col-sm
+ {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+    flex: 1;
+}
+
+.cards-holder:nth-of-type(3) .col-sm:nth-of-type(2) .shadowed-card article .row
+ {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cards-holder:nth-of-type(3) .col-sm:nth-of-type(2) .shadowed-card article
+ {
+    padding: 1rem;
+}
+
+/* fourth cards holder */
+
+.cards-holder:nth-of-type(4)
+ {
+    width: 100%;
+    height: 55px;
+}
+
+.cards-holder:nth-of-type(4) .col-sm .col-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
